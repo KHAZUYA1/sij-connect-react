@@ -1,0 +1,46 @@
+/* 1. WAJIB PALING ATAS */
+@import "tailwindcss";
+
+/* 2. Import Lainnya (Font & Icon) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* Pastikan package fontawesome sudah diinstall, kalau error komentar dulu baris bawah ini */
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+/* 3. Config Theme */
+@theme {
+  --font-sans: 'Inter', sans-serif;
+}
+
+/* 4. Utilities Custom */
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc;
+    color: #1e293b;
+  }
+}
+
+@utility glass {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+@utility hover-3d {
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+  }
+}
+
+@utility text-glow-gold {
+  text-shadow: 0 0 15px rgba(217, 119, 6, 0.6);
+}
+
+/* Tambahkan class Login/Register di sini jika hilang */
+.login-bg, .register-bg {
+    background: radial-gradient(circle at top right, #1e293b, #0f172a);
+    min-height: 100vh;
+}
