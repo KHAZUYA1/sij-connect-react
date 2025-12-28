@@ -92,7 +92,7 @@ export default function Karir() {
                 <div className="container mx-auto flex justify-between items-center">
                     <Link to="/" className="flex items-center gap-3">
                         {/* Pastikan gambar ada di public/image */}
-                        <img src="/image/LOGO SIJ.png" className="h-10 bg-white rounded p-1" alt="Logo SIJ" onError={(e) => e.target.src='https://placehold.co/40x40?text=SIJ'} />
+                        <img src="/image/logosij.png" className="h-10  rounded p-1" alt="Logo SIJ" onError={(e) => e.target.src='https://placehold.co/40x40?text=SIJ'} />
                         <span className="font-bold text-lg hidden md:block">PT SINO INDAH JAYA</span>
                     </Link>
                     <div className="flex gap-4">

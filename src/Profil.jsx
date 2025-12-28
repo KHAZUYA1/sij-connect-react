@@ -37,7 +37,7 @@ export default function Profil() {
                         
                         {/* Image Section */}
                         <div className="lg:w-1/2" data-aos="fade-right">
-                            <img src="/image/GEDUNGSIJ.jpg" className="rounded-2xl shadow-2xl w-full object-cover h-96" alt="Gedung Pabrik" onError={(e) => e.target.src='https://placehold.co/600x400?text=Gedung+Pabrik'} />
+                            <img src="/image/gedungsij.jpg" className="rounded-2xl shadow-2xl w-full object-cover h-96" alt="Gedung Pabrik" onError={(e) => e.target.src='https://placehold.co/600x400?text=Gedung+Pabrik'} />
                         </div>
                         
                         {/* Text Section */}
@@ -69,7 +69,7 @@ export default function Profil() {
                 <div className="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-2">
                         <div className="flex items-center gap-3 mb-6">
-                            <img src="/image/LOGO SIJ.png" className="h-10 rounded p-1" alt="Logo Footer" onError={(e) => e.target.style.display='none'} />
+                            <img src="/image/logosij.png" className="h-10 rounded p-1" alt="Logo Footer" onError={(e) => e.target.style.display='none'} />
                             <span className="text-xl font-bold text-white tracking-wider">PT SINO INDAH JAYA</span>
                         </div>
                         <p className="leading-relaxed mb-6 pr-10">

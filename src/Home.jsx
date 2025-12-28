@@ -62,7 +62,7 @@ export default function Home() {
             {/* --- HERO SECTION --- */}
             <section id="home" className="relative min-h-screen flex items-center justify-start">
                 <div className="absolute inset-0 z-0">
-                    <img src="/image/ALAM.webp" className="w-full h-full object-cover" alt="Hero Background" onError={(e) => e.target.src='https://placehold.co/1920x1080'} />
+                    <img src="/image/alam.webp" className="w-full h-full object-cover" alt="Hero Background" onError={(e) => e.target.src='https://placehold.co/1920x1080'} />
                     <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/80 to-transparent"></div>
                 </div>
 
@@ -218,7 +218,7 @@ export default function Home() {
                         {/* KOLOM 1: Identitas & Social Media */}
                         <div className="space-y-6">
                             <div className="flex items-center gap-3">
-                                <img src="/image/LOGO SIJ.png" className="h-12 w-auto object-contain" alt="Logo Footer" onError={(e) => {e.target.style.display='none'}} />
+                                <img src="/image/logosij.png" className="h-12 w-auto object-contain" alt="Logo Footer" onError={(e) => {e.target.style.display='none'}} />
                                 <div>
                                     <h3 className="text-xl font-bold text-white tracking-wide">PT SINO INDAH JAYA</h3>
                                     <p className="text-xs text-gray-500">Automotive Interior Manufacturer</p>

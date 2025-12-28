@@ -44,7 +44,7 @@ export default function Produk() {
                         {/* Card 1: Cutting */}
                         <div className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 group flex flex-col h-full" data-aos="fade-up">
                             <div className="h-60 overflow-hidden relative">
-                                <img src="/image/CUT.jpeg" className="w-full h-full object-cover transform group-hover:scale-110 transition duration-700" alt="Cutting" onError={(e) => e.target.src='https://placehold.co/600x400?text=Cutting+Process'} />
+                                <img src="/image/cutting.jpeg" className="w-full h-full object-cover transform group-hover:scale-110 transition duration-700" alt="Cutting" onError={(e) => e.target.src='https://placehold.co/600x400?text=Cutting+Process'} />
                                 <div className="absolute top-0 left-0 bg-blue-600 text-white font-bold px-4 py-2 rounded-br-xl">01</div>
                             </div>
                             <div className="p-8 flex-grow">
@@ -101,7 +101,7 @@ export default function Produk() {
                 <div className="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-2">
                         <div className="flex items-center gap-3 mb-6">
-                            <img src="/image/LOGO SIJ.png" className="h-10 rounded p-1" alt="Logo Footer" onError={(e) => e.target.style.display='none'} />
+                            <img src="/image/logosij.png" className="h-10 rounded p-1" alt="Logo Footer" onError={(e) => e.target.style.display='none'} />
                             <span className="text-xl font-bold text-white tracking-wider">PT SINO INDAH JAYA</span>
                         </div>
                         <p className="leading-relaxed mb-6 pr-10">
