@@ -294,7 +294,7 @@ export default function Home() {
                             <div className="w-full h-48 bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 group hover:border-amber-500 transition-colors">
                                 <iframe 
                                     title="Lokasi PT Sino Indah Jaya"
-                                    src="https://maps.google.com/maps?q=PT+SINO+INDAH+JAYA&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.333973163356!2d108.26123457499478!3d-6.729061593266986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f272a275727b5%3A0x629535099710373c!2sPT.%20Sino%20Indah%20Jaya!5e0!3m2!1sid!2sid!4v1703666666666!5m2!1sid!2sid" 
                                     width="100%" 
                                     height="100%" 
                                     style={{ border: 0 }} 

@@ -56,7 +56,7 @@ export default function Navbar() {
                 {/* --- LOGO --- */}
                 <Link to="/" className="flex items-center gap-3 group">
                     <div className="p-2 rounded-lg shadow-lg hover:scale-105 transition duration-300 bg-white/5">
-                        <img src="/image/LOGO SIJ.png" alt="Logo SIJ" className="h-10 w-auto object-contain" onError={(e) => e.target.style.display='none'} />
+                        <img src="/image/logosij.png" alt="Logo SIJ" className="h-10 w-auto object-contain" onError={(e) => e.target.style.display='none'} />
                     </div>
                     <div className="hidden md:flex flex-col text-white">
                         <span className="text-xl font-bold tracking-wider drop-shadow-md">PT SINO INDAH JAYA</span>
