@@ -133,7 +133,7 @@ export default function Home() {
                         </div>
                         <div className="lg:w-1/2 relative" data-aos="fade-left">
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
-                                <img src="/image/GEDUNGSIJ.jpg" className="w-full object-cover transform group-hover:scale-105 transition duration-700" alt="Gedung" onError={(e) => e.target.src='https://placehold.co/600x400'} />
+                                <img src="/image/gedungsij.jpg" className="w-full object-cover transform group-hover:scale-105 transition duration-700" alt="Gedung" onError={(e) => e.target.src='https://placehold.co/600x400'} />
                                 <div className="absolute inset-0 bg-[#0f172a]/20 group-hover:bg-transparent transition"></div>
                             </div>
                         </div>
