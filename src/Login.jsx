@@ -76,7 +76,7 @@ export default function Login() {
 
                     <div className="text-center mb-10 relative">
                         <div className="inline-block p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-black border border-cyan-500/30 shadow-[0_0_25px_rgba(34,211,238,0.15)] mb-5">
-                            <img src="/image/LOGO SIJ.png" alt="SIJ" className="h-14 w-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]" onError={(e) => e.target.style.display='none'} />
+                            <img src="/image/logosij.png" alt="SIJ" className="h-14 w-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]" onError={(e) => e.target.style.display='none'} />
                         </div>
                         <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter uppercase drop-shadow-lg">
                             SYSTEM <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">LOGIN</span>
