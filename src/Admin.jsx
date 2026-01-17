@@ -53,7 +53,7 @@ export default function Admin() {
 
     // --- KODE BARU (PENGGANTINYA) ---
     
-    const ADMIN_EMAIL = "sij-connect01@gmail.com"; // 1. Tambahkan variabel ini
+    const ADMIN_EMAIL = "sij.connect01@gmail.com"; // 1. Tambahkan variabel ini
 
    // --- FUNGSI AUTO LOGOUT ---
     const autoLogout = useCallback(async () => {
@@ -154,16 +154,35 @@ export default function Admin() {
     };
 
     const handleDeleteNews = async (id, title) => {
-        if (confirm(`Hapus berita "${title}"?`)) {
+        // Ganti confirm() biasa dengan Swal
+        const result = await Swal.fire({
+            title: 'Hapus Berita?',
+            text: `Anda akan menghapus berita "${title}". Data tidak bisa dikembalikan!`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Ya, Hapus!',
+            cancelButtonText: 'Batal'
+        });
+
+        if (result.isConfirmed) {
             try {
                 await deleteDoc(doc(db, "news", id));
+                // Tampilkan pesan sukses singkat
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Terhapus!',
+                    text: 'Berita berhasil dihapus.',
+                    timer: 1500,
+                    showConfirmButton: false
+                });
                 loadNews();
             } catch (error) {
-                alert("Gagal hapus: " + error.message);
+                Swal.fire('Gagal', error.message, 'error');
             }
         }
     };
-
     const submitNews = async (e) => {
         e.preventDefault();
         setIsSavingNews(true);
@@ -230,12 +249,31 @@ export default function Admin() {
     };
 
     const handleDeleteCareer = async (id, title) => {
-        if (confirm(`Hapus lowongan "${title}"?`)) {
+        // Ganti confirm() biasa dengan Swal
+        const result = await Swal.fire({
+            title: 'Hapus Lowongan?',
+            text: `Yakin ingin menghapus lowongan "${title}"?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Ya, Hapus!',
+            cancelButtonText: 'Batal'
+        });
+
+        if (result.isConfirmed) {
             try {
                 await deleteDoc(doc(db, "careers", id));
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Terhapus!',
+                    text: 'Lowongan berhasil dihapus.',
+                    timer: 1500,
+                    showConfirmButton: false
+                });
                 loadCareers();
             } catch (error) {
-                alert("Gagal hapus loker: " + error.message);
+                Swal.fire('Gagal', error.message, 'error');
             }
         }
     };
