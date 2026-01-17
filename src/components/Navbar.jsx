@@ -10,7 +10,7 @@ export default function Navbar() {
     const navigate = useNavigate();
     
     // Email Admin (Harus sama persis dengan yang di Login.jsx)
-    const ADMIN_EMAIL = "sij-connect01@gmail.com"; 
+    const ADMIN_EMAIL = "sij.connect01@gmail.com"; 
 
     // --- EFFECT: Cek Login Realtime ---
     useEffect(() => {
