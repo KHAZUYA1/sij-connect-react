@@ -12,7 +12,7 @@ export default function Login() {
     const navigate = useNavigate();
 
     // --- EMAIL KHUSUS ADMIN (HARDCODED SECURITY) ---
-    const ADMIN_EMAIL = "sij-connect01@gmail.com";
+    const ADMIN_EMAIL = "sij.connect01@gmail.com";
 
     const handleLogin = async (e) => {
         e.preventDefault();
