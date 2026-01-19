@@ -312,7 +312,7 @@ export default function Home() {
                     <hr className="border-gray-800 my-8" />
 
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-                        <p>© 2025 <span className="text-gray-300 font-semibold">PT SINO INDAH JAYA</span>. All Rights Reserved.</p>
+                        <p>© 2025 <span className="text-gray-300 font-semibold">PT SINO INDAH JAYA</span>.Yuda Pamungkas. All Rights Reserved.</p>
                         <p className="flex gap-4">
                             <a href="#" className="hover:text-white transition">Privacy Policy</a>
                             <a href="#" className="hover:text-white transition">Terms of Service</a>
