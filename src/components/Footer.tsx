@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-white/10 pt-8 text-center text-sm">
-        © 2025 PT SINO INDAH JAYA. All Rights Reserved.
+        © 2025 PT SINO INDAH JAYA. All Rights Reserved.Yuda Pamungkas.KAZUYA
       </div>
     </footer>
   );
